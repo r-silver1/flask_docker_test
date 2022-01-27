@@ -8,6 +8,7 @@ app = Flask(__name__)
 #  https://stackoverflow.com/a/65515264/10432596
 color = os.environ.get('APP_COLOR')
 
+
 @app.route("/")
 def main():
     print("HERE!!!")
@@ -18,7 +19,9 @@ def main():
         <title>{color}</title>
     </head>
     <body style="background:{color}">
+        <h1>
         Your text here {color}
+        </h1>
     <body>
     """)
 
